@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 *{
@@ -45,6 +46,7 @@ body {
 
 .quote-box blockquote {
     font-size: 30px;
+    font-family: "Public Sans", sans-serif;
     min-height: 150px;
 }
 
@@ -68,4 +70,28 @@ body {
     top: 50%;
     left: -18px;
     transform: translateY(-50%);
+}
+
+#btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#btnContainer button {
+    padding: 10px 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+    background: #4ebfbf;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
