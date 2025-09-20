@@ -4,7 +4,14 @@ const inpvalue = document.getElementById("qrval");
 const imgBox = document.getElementById("imgBox")
 
 function generateQR(){
-    image.src = url + inpvalue.value;
-    imgBox.classList.add("show-img")
+    if(inpvalue.value.length > 0){
+        image.src = url + inpvalue.value;
+        imgBox.classList.add("show-img")
+    }else{
+        inpvalue.classList.add("error")
+        setTimeout(() => {
+            inpvalue.classList.remove('error')
+        }, 1000);
+    }
 }
 
