@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "SUSE Mono", sans-serif;;
 }
 
 body {
@@ -14,8 +17,55 @@ body {
     top: 50%;
     padding: 60px;
     background-color: white;
+    width: 700px;
     border-radius: 10px;
     transform: translate(-50%,-70%);
     text-align: center;
-    
+    box-shadow: 0 10px 20px 0px rgba(
+        0, 0, 0, 0.15);
+}
+
+.quote-box h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.quote-box h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 5px;
+    width: 50px;
+    background-color: #ea1101;
+    bottom: -10px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+    font-size: 30px;
+    min-height: 150px;
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after {
+    content: '"';
+}
+
+.quote-box span {
+    position: relative;
+    display: block;
+    float: right;
+    margin-top: 10px;
+}
+
+.quote-box span::before {
+    content: '';
+    height: 4px;
+    width: 15px;
+    background-color: #ea1101;
+    position: absolute;
+    top: 50%;
+    left: -18px;
+    transform: translateY(-50%);
 }
